@@ -60,3 +60,4 @@ jobs:
           branch: github-actions/upgrade
           title: 'chore: upgrade dependencies'
           commit-message: 'chore: upgrade dependencies'
+          label: auto-approved

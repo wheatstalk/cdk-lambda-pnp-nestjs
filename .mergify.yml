@@ -1,0 +1,16 @@
+queue_rules:
+  - name: default
+    conditions:
+      - status-success=build
+
+pull_request_rules:
+  - name: Automatic merge for auto-approved on approval and successful build
+    conditions:
+      - label=auto-approved
+      - status-success=build
+    actions:
+      queue:
+        method: squash
+        name: default
+        commit_message: title+body
+      delete_head_branch: {}
