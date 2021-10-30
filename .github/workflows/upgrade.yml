@@ -19,6 +19,7 @@ jobs:
           node-version: 14.x
           cache: 'yarn'
       - run: npx -p npm-check-updates ncu -p yarn --deep --target minor --upgrade
+      - run: yarn set version latest
       - run: YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn
       - run: yarn build
       - run: yarn format
