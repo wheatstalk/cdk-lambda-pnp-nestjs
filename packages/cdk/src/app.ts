@@ -1,13 +1,13 @@
 import * as cdk from '@aws-cdk/core';
 import * as apigatewayv2 from '@aws-cdk/aws-apigatewayv2';
 import * as apigatewayv2_integrations from '@aws-cdk/aws-apigatewayv2-integrations';
-import {WorkspaceFocusFunction} from "@wheatstalk/cdk-lambda-pnp/lib/workspace-focus-function";
+import { YarnWorkspaceFunction } from "@wheatstalk/cdk-lambda-pnp";
 
 class IntegCdkNest extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props: cdk.StackProps = {}) {
     super(scope, id, props);
 
-    const handler = new WorkspaceFocusFunction(this, 'Handler', {
+    const handler = new YarnWorkspaceFunction(this, 'Handler', {
       workspace: 'api',
       handler: 'dist/lambda.handler',
     });
