@@ -1,12 +1,12 @@
-import {NestFactory} from "@nestjs/core";
-import {AppModule} from "./app.module";
+import { NestFactory } from '@nestjs/core';
+import { AppModule } from './app.module';
 
 async function main() {
   const app = await NestFactory.create(AppModule);
   await app.listen(3000);
 }
 
-main().catch(e => {
+main().catch((e) => {
   console.error(e);
   process.exit(1);
 });

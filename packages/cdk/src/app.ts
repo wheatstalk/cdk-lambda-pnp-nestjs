@@ -1,7 +1,7 @@
-import * as cdk from '@aws-cdk/core';
 import * as apigatewayv2 from '@aws-cdk/aws-apigatewayv2';
 import * as apigatewayv2_integrations from '@aws-cdk/aws-apigatewayv2-integrations';
-import { YarnWorkspaceFunction } from "@wheatstalk/cdk-lambda-pnp";
+import * as cdk from '@aws-cdk/core';
+import { YarnWorkspaceFunction } from '@wheatstalk/cdk-lambda-pnp';
 
 class IntegCdkNest extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props: cdk.StackProps = {}) {

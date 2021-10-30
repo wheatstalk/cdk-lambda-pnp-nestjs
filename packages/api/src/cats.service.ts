@@ -1,4 +1,4 @@
-import {Injectable} from "@nestjs/common";
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class CatsService {
@@ -7,7 +7,7 @@ export class CatsService {
       name: 'The first cat',
       age: 7,
       breed: 'persian',
-    }
+    },
   ];
 
   create(cat: Cat) {
