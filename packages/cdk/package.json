@@ -9,7 +9,7 @@
     "@aws-cdk/aws-lambda": "^1.130.0",
     "@aws-cdk/core": "^1.130.0",
     "@wheatstalk/cdk-lambda-pnp": "^0.2.3",
-    "api": "0.0.0"
+    "api": "0.13.5"
   },
   "devDependencies": {
     "@types/node": "^16.11.6",
